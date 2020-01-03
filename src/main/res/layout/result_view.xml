@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_gravity="center"
+     android:background="@android:color/transparent"
+     >
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/spiner_ngay"
+        android:theme="@style/spiner"
+        />
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/spiner_thang"
+        android:theme="@style/spiner"
+        />
+    <Spinner
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:id="@+id/spiner_nam"
+        android:theme="@style/spiner"
+        />
+ </LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_kq"
+        android:text="Kết quả :"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#B13636"
+
+        />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/img_view_result"
+
+        />
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+
+       >
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="tất cả"
+          android:id="@+id/rd_all"
+          android:textStyle="bold"
+          android:textColor="#E61313"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          />
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2 số"
+          android:textStyle="bold"
+          android:textColor="#E61313"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          android:id="@+id/rd_2so"
+          />
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="3 số"
+          android:textStyle="bold"
+          android:textColor="#E61313"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          android:id="@+id/rd_3so"
+          />
+   </RadioGroup>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/img_view_dauduoi"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>
+   </ScrollView>
+</LinearLayout>
